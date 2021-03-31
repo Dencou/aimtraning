@@ -1,0 +1,13 @@
+
+
+
+<div [ngClass]="'board ' + (this.randomnum >= this.timeLeft ? 'go' : 'waiting')" (click)="check()">
+    <p>{{randomnum >= timeLeft ? 'Click now!' : 'Wait...'}}</p>
+    <p class="textinbox">{{mseconds}} ms</p>
+    
+</div>
+
+
+
+
+

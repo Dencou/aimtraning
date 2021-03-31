@@ -1,0 +1,14 @@
+<!--Toolbar-->
+
+<div class="greenBox">
+    <p class="textinboxf80" style="text-align: center;">Aim Training</p>
+    <p class="textinboxf25" style="text-align: center;">Improve your aim here in the best aim trainig in the world wide web</p>
+    <button (click)="gotoAimTranig()" mat-flat-button color="primary" style="margin:0 auto; display:block; margin-top:5px;background-color: rgb(255, 187, 0);">Start!</button>
+</div>
+
+<div class="cards">
+    <mat-card class="card"><p>Normal aim train</p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3AFS_1mcuKgHcEIK8TnX5QCeRpNzWRAX4MA&usqp=CAU" width="60px" height="60px"><br><button class="buttonincard"  mat-button (click)="gotoAimTranig()">Play</button><br><br><br></mat-card>
+    <mat-card class="card"><p>Fast aim train</p><mat-icon class="icon">flash_on</mat-icon><br> <button class="buttonincard" mat-button (click)="goToFastAim()">Play</button></mat-card>
+    <mat-card class="card"><p>Reaction test</p><mat-icon class="icon">bolt</mat-icon><br> <button class="buttonincard" mat-button (click)="goToReactionTest()">Play</button></mat-card>
+    <mat-card class="card"><p>Pokemon!</p><mat-icon class="icon">catching_pokemon</mat-icon><br> <button class="buttonincard" mat-button (click)="goToPokemon()">Play</button></mat-card>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="mainbox">
+<div class="textcenter">
+    <h1>Aim training</h1>
+
+    <h2>Train your aim here!</h2>
+    
+
+</div>
+<!--Timer-->
+<p class="textcenter">Click to start!</p>
+<button mat-raised-button class="centerTimer" (click)='startTimer()'>Start Timer</button><br><br>
+<div class="textcenter"><button mat-raised-button (click)="clearscore()">Restart game</button><br><br>
+<p class="textcenter">{{timeLeft}} Seconds Left....</p>
+
+
+<h2 class="textcenter">Score: {{points | async}}</h2>
+
+
+<div class="box center crosshair">
+    <div *ngFor="let row of grid; let rowIndex = index" class="row">
+	    <div *ngFor="let column of row; let colIndex = index" (click)="checked(rowIndex, colIndex)"
+	    	[ngClass]="column > 0 ? 'active' : 'inactive'"></div>
+            
+    </div>
+</div>
+
+
+</div>
+</div>
+
+

@@ -1,0 +1,41 @@
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin: 8px;
+    border-radius: 10px;
+   
+
+    
+}
+.center{
+    align-items: center;
+
+}
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.card-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    
+
+}
+.block-item{
+    width: 50%;
+    flex: 1 46%;
+    min-height: 42px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}

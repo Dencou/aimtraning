@@ -1,0 +1,28 @@
+<div class="wrapper"> 
+   
+
+    <div class="mainbox">
+
+        <div class="centered" *ngIf="current">
+            <img  src="{{current.sprites.back_default}}">
+            <img  src="{{current.sprites.front_default}}">
+            <h1>#{{current.id}} {{current.name}}</h1>
+        </div>
+        <div>
+            <p class="center">Search by name</p>
+            <input class="inpt center" [(ngModel)]="stringid" (keyup.enter)="stringSearch()" type="text">
+            <p class="center">search by id</p>
+            <input class="inpt center" (keyup.enter)="submit()" [(ngModel)]="id" type="number">
+        </div>
+        <div class="boxesdown textcenter">
+            <button mat-raised-button (click)="prev()">previous</button>
+            <app-card class="abox" [listToShow]="getAbilities(current.abilities)" [title]="'Abilities'"></app-card>
+            <app-card class="abox" [listToShow]="getRandomFor(current.moves)" [title]="'Moves'"></app-card>
+            <button mat-raised-button (click)="next()">next</button>
+        </div>
+        
+    </div>
+    
+
+    
+</div>

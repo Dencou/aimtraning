@@ -1,0 +1,57 @@
+.grid-item{
+    border: 0px solid black;
+    height: 48px;
+    width: 48px;
+
+    
+}
+.row{
+    display: flex;
+
+}
+.column{
+    display: flex;
+
+
+}
+.grid-item.active{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+}
+.mainbox{
+    height: 700px;
+    width: 1920px;
+    background-color: rgb(43, 137, 226);
+
+}
+.center{
+    margin:auto;
+    position:relative;
+
+}
+.box{
+    border: 1px solid blue;
+    background-color: rgb(37, 36, 36);
+    width: auto;
+    height: auto;
+    margin:auto;
+    position:relative;
+    width: 500px; /* or whatever width */
+}
+.textcenter{
+    text-align: center;
+}
+.centerTimer{
+    width: 100%;
+
+
+}
+.f18{
+    font-size: 20px;
+    font-weight: bold;
+}
+.crosshair{
+    cursor: crosshair;
+    
+}

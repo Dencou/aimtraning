@@ -1,0 +1,23 @@
+
+<div class="mainbox">
+    <p class="textcenter">Click to play!</p>
+    <button mat-raised-button class="centerTimer" (click)="iterate()">Play!</button><br><br>
+    <div class="textcenter"><button mat-raised-button (click)="restartGame()">Restart game</button></div><br>
+    <p class="textcenter">Seconds left ==> {{timeLeft}}</p>
+    <p class="textcenter f18">Score {{score}}</p>
+
+    
+    <div class="textcenter">
+        <button mat-raised-button style="margin-right: 3px;" (click)="level1()">level1</button>
+        <button mat-raised-button style="margin-right: 3px;" (click)="level2()">level2</button>
+        <button mat-raised-button style="margin-right: 3px;" (click)="level3()">level3</button>
+    </div><br>
+
+    <div  class="box center crosshair">
+    <div class="row" *ngFor="let row of grid; let rindex = index">
+       <div class="column" *ngFor="let column of row; let cindex = index">
+           <span (click)="removeDot(rindex,cindex)" [ngClass]="column == 1? 'active' : ''" class="grid-item"> </span>
+       </div>
+    </div>
+    
+</div>

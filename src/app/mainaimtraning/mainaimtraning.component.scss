@@ -1,0 +1,57 @@
+p {
+    font-family: Lato;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  /*aca se ponene y quitan que se vean los grids */
+  .row > div {
+    height: 32px;
+    width: 52px !important;
+    border: 0px solid black;
+    
+  }
+  
+  .row > div.active {
+    background: rgb(145, 90, 233);
+    border-radius: 100%;
+    
+  }
+
+.box{
+    border: 1px solid blue;
+    background-color: rgb(37, 36, 36);
+    width: 100%;
+    height: auto;
+    margin:auto;
+    position:relative;
+    width: 1000px; /* or whatever width */
+}
+.textcenter{
+    text-align: center;
+}
+.center{
+    margin:auto;
+    position:relative;
+
+}
+.centerTimer{
+    margin:auto;
+    position:relative;
+    width: 1900px;
+
+
+}
+.body { background-color: rgb(230, 230, 230); }
+
+.mainbox{
+  height: 600px;
+  width: 1920px;
+  background-color: rgb(43, 137, 226);
+}
+.crosshair{
+  cursor: crosshair;
+  
+}
