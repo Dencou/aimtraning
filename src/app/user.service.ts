@@ -24,7 +24,6 @@ export class UserService {
     this.http.get(description).subscribe(
       datos => {
         this.pokemonsdescription = datos
-        console.log("descriptions",this.pokemonsdescription.descriptions)
       }
     )
   }

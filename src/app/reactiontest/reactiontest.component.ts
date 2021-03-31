@@ -44,7 +44,6 @@ export class ReactiontestComponent implements OnInit {
   /*Track the second click and if the player clicks too early */ 
   secondclick(){
     if(this.randomnum != this.timeLeft ){
-      console.log(`Don't hurry`)
     }else{
       this.mseconds = this.timeLeft2
     }
@@ -78,8 +77,6 @@ export class ReactiontestComponent implements OnInit {
 
   ngOnInit(): void {
 
-    
-    console.log(this.randomnum)
   }
 
 }

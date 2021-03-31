@@ -22,7 +22,6 @@ export class TestComponent implements OnInit {
       this.stringid = this.current.name
     },
     error => {
-      console.log(error)
       window.alert(error.status==404 ? 'Pokemon not found' : 'Error')
       
     })
