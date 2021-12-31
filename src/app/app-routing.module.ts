@@ -11,7 +11,8 @@ const routes: Routes = [
   {path:`mainaim`, component:MainaimtraningComponent},
   {path:`fastaim`, component:FastgamemodeComponent},
   {path:`reactiontest`, component:ReactiontestComponent},
-  {path:`pokemon`, component:TestComponent}
+  {path:`pokemon`, component:TestComponent},
+  {path:``, component:MainpageComponent}
   
 ];
 

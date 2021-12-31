@@ -94,7 +94,7 @@ export class FastgamemodeComponent implements OnInit {
     this.score= 0;
   }
 
-  /*the dots on click disappear*/
+  /*the dots on click disappear here */
   removeDot(x:number,y:number){
     if(this.timeLeft==20)return;
     if(this.grid[x][y] < 1)return;
