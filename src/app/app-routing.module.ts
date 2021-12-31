@@ -12,8 +12,7 @@ const routes: Routes = [
   {path:`fastaim`, component:FastgamemodeComponent},
   {path:`reactiontest`, component:ReactiontestComponent},
   {path:`pokemon`, component:TestComponent},
-  {path:``, component:MainpageComponent}
-  
+
 ];
 
 @NgModule({
